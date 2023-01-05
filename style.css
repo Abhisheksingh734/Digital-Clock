@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: url(/background.jpg);
+    background-size: cover;
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.clock{
+    display: flex;
+}
+.clock div{
+    margin: 10px;
+    position: relative;
+    transition: 0.3s;
+}
+.clock span{
+    background-color: rgb(151, 224, 152);
+    height: 100px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    opacity: .8;
+    text-shadow: 2px 2px 4px rgb(0,0,0,0.8);
+    color: white;
+
+}
+
+.clock .text{
+    font-size: 15px;
+    letter-spacing: 2px;
+    background-color: rgb(18, 127, 47);
+    height: 40px;
+    align-items: center;
+    bottom: 0;
+    /* position: absolute; */
+}
+.clock #hours,#minutes,#seconds{
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+}
+.clock #ampm{
+    bottom: 0;
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    font-size: 25px;
+    background-color: rgb(83, 106, 235);
+    letter-spacing: 2px;
+}
+.clock div:hover{
+    transform: scale(1.02);
+
+}
